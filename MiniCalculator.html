@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input id="input1" type="number" placeholder="enter 1st Number"><input id="input2" type="number" placeholder="enter 2nd Number">
+    <br>
+    <button id="Add" onclick="Addi()">Add</button>
+    <button id="Sub" onclick="Subt()">Subtract</button>
+    <button id="Multi" onclick="Multip()">Multiply</button>
+    <button id="Div" onclick="Divi()">Divide</button>
+</body>
+</html>
+<script>
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+
+    function Addi(){
+        alert((+input1.value) + (+input2.value));
+    }
+    function Subt(){
+        alert((+input1.value) - (+input2.value));
+    }
+    function Multip(){
+        alert((+input1.value) * (+input2.value));
+    }
+    function Divi(){
+        alert((+input1.value) / (+input2.value)); 
+    }
+</script>
